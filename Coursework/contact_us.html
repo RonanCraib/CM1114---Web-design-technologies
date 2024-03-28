@@ -1,50 +1,73 @@
-<html>
-    <head>
-        <title></title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Custom stylesheet -->
+    <link rel='stylesheet' href='css/main.css'>
+</head>
 
-    <body>
-        <header> <h1>Action/adventure game society</h1> </header>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Techno Artists Society</h1>
+    </header>
 
-        <nav>  </nav>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <!-- Homepage link -->
+            <li class="active"><a href="index.html"> - Homepage</a></li>
+            <!-- Event calendar link -->
+            <li class="active"><a href="event_calendar.html"> - Event calendar</a></li>
+            <!-- Image gallery link -->
+            <li class="active"><a href="img_gallery.html"> - Image gallery</a></li>
+            <!-- Current members link -->
+            <li class="active"><a href="current_members.html"> - Current members</a></li>
+            <!-- Contact us link -->
+            <li class="active"><a href="contact_us.html"> - Contact us</a></li>
+        </ul>
+    </nav>
 
-        <main> 
+    <!-- Main content section -->
+    <main> 
+        <div>
+            <!-- Contact form -->
+            <form>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value=""><br>
+                    <label for="Membership status">Membership status:</label>
+                    <input type="checkbox" id="Member">
+                    <label for="non-member">Member</label>
+                    <input type="checkbox" id="Non-member">
+                    <label for="non-member">Non-member</label><br>
+                    <label for="comments">Comments:</label>
+                    <input type="text" id="comments" value=""><br>
+                    <label for="file-attachments">File Attachments:</label>
+                    <input type="file" id="file-attachments"><br>
+                </fieldset>
+            </form>
+
+            <!-- Form submission outcome -->
             <div>
-                <ul>
-                    <li><a href="event_calendar.html">Event calendar</a></li>
-                    <li><a href="img_gallery.html">Image gallery</a></li>
-                    <li><a href="current_members.html">Current members</a></li>
-                    <li><a href="contact_us.html">Contact us</a></li>
-                </ul>
+                <p id="form_outcome">
+                    <button type="button" onclick='document.getElementById("form_outcome").innerHTML="Form has been sent successfully"'>
+                        Submit
+                    </button>
+                </p>
             </div>
-            <div>
-                <form>
-                    <fieldset>
-                        <legend>
-                            Contact us using the below form.
-                        </legend>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" value=""/><br />
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" value=""/><br />
-                        <label for="Membership Status">Membership Status:</label>
-    
-                        <input type="radio" id="member" name="Membership Status" value="Member">
-                        <label for="Member">Member</label>
-                        <input type="radio" id="non member" name="Membership Status" value="Non Member">
-                        <label for="Non Member">Non Member</label><br>
-                        <label for="Comments:">Comments:</label>
-                        <input type="text" value=""/><br/>
-                        <label for="file attachments">File Attachments:</label>
-                        <input type="file" name="file attachments" value =""/></br>
-    
-                    </fieldset>
-                </form>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <aside>  </aside>
+    <!-- Aside section -->
+    <aside></aside>
 
-        <footer>  </footer>
-    </body>
+    <!-- Footer section -->
+    <footer></footer>
+</body>
 </html>

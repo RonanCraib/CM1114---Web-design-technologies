@@ -1,37 +1,95 @@
-<html>
-    <head>
-        <title></title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>
+    <!-- Custom stylesheet -->
+    <link rel='stylesheet' href='css/main.css'>
+    <!-- Additional inline styles -->
+    <style>
+        /* Add your additional CSS styles here */
+    </style>
+</head>
+<body>
 
-    <body>
-        <header> <h1>Action/adventure game society</h1> </header>
+<!-- Header section -->
+<header>
+    <h1>Techno Artists Society</h1>
+</header>
 
-        <nav>  </nav>
+<!-- Navigation bar -->
+<nav>
+    <ul>
+        <!-- Homepage link -->
+        <li class="active"><a href="index.html"> - Homepage</a></li>
+        <!-- Event calendar link -->
+        <li class="active"><a href="event_calendar.html"> - Event calendar</a></li>
+        <!-- Image gallery link -->
+        <li class="active"><a href="img_gallery.html"> - Image gallery</a></li>
+        <!-- Current members link -->
+        <li class="active"><a href="current_members.html"> - Current members</a></li>
+        <!-- Contact us link -->
+        <li class="active"><a href="contact_us.html"> - Contact us</a></li>
+    </ul>
+</nav>
 
-        <main> 
-            <div>
-                <ul>
-                    <li><a href="event_calendar.html">Event calendar</a></li>
-                    <li><a href="img_gallery.html">Image gallery</a></li>
-                    <li><a href="current_members.html">Current members</a></li>
-                    <li><a href="contact_us.html">Contact us</a></li>
-                </ul>
+<!-- Main content section -->
+<main> 
+    <div id="img-gallery" class="container">
+        <div class="row">
+            <div class="col-sm">
+                <!-- Image 1 -->
+                <img src="images/alt8.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+                <!-- Image 2 -->
+                <img src="images/ayzr.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+                <!-- Image 3 -->
+                <img src="images/carv.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
             </div>
-            <div>
-                <img src="images/horizonZD.webp" width="200" height="200" alt ="Horizon zero dawn"/>
-                <img src="images/Lastofus2.jpg" width="200" height="200" alt ="The last of us part II"/>
-                <img src="images/residentevil7.jpg" width="200" height="200" alt ="Resident evil 7"/>
-                <img src="images/uncharted4.jpg" width="200" height="200" alt ="Uncharted 4"/>
-                <img src="images/unchartedLL.jpg" width="200" height="200" alt ="Uncharted Lost Legacy"/>
-                <img src="images/division2.jpg" width="200" height="200" alt ="The division 2"/>
-                <img src="images/reddeadredemption2.jpg" width="200" height="200" alt ="Red dead redemption 2"/>
-                <img src="images/godofwar.jpg" width="200" height="200" alt ="God of war"/>
-                <img src="images/fallout4.jpg" width="200" height="200" alt ="Fallout 4"/>
+            <div class="col-sm">
+                <!-- Image 4 -->
+                <img src="images/charliesparks.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+                <!-- Image 5 -->
+                <img src="images/franck.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+                <!-- Image 6 -->
+                <img src="images/ninenines.jpeg" class="gallery-img" width="412" height="300" alt="Description of the image">
             </div>
-         </main>
+            <div class="col-sm">
+                <!-- Image 7 -->
+                <img src="images/oguz.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+                <!-- Image 8 -->
+                <img src="images/saralandry.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+                <!-- Image 9 -->
+                <img src="images/schlomo.jpg" class="gallery-img" width="412" height="300" alt="Description of the image">
+            </div>
+        </div>
+    </div>
+</main>
 
-        <aside>  </aside>
+<!-- Sidebar section -->
+<aside></aside>
 
-        <footer>  </footer>
-    </body>
+<!-- Footer section -->
+<footer></footer>
+
+<!-- JavaScript code -->
+<script>
+    // JavaScript code to be placed after the HTML content
+    var galleryImages = document.querySelectorAll('.gallery-img');
+
+    galleryImages.forEach(function(image) {
+        // Add border on mouseover
+        image.addEventListener("mouseover", function() {
+            this.style.border = "solid red 1px";
+        });
+        
+        // Remove border on mouseout
+        image.addEventListener("mouseout", function() {
+            this.style.border = "none";
+        });
+    });
+</script>
+
+</body>
 </html>
+

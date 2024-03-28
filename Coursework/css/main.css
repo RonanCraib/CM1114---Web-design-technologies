@@ -1,0 +1,27 @@
+body {background-color: #040D12;}
+header {background-color: black; border-top-left-radius: 10px; border-top-right-radius: 10px; padding: 10px;}
+#logo {height: 50px; width: 50px; float:left; margin: right 10px;}
+h1, h2, h3, h4, h5, h6 {color: darkred; font-family: "Lucida Console";}
+h1 {font-size: 36pt; display:inline}
+h2 {font-size: 26pt}
+p {font-size: 10pt; color:white} 
+
+main {background-color: black; color:white; border-radius: 10px; padding: 10px;}
+
+aside {padding: 10px; background-color: black; border-radius: 10px;}
+
+footer {padding: 10px; background-color: black; border-radius: 10px;}
+
+nav li {padding: 16px; border: 2px; background-color: black; list-style-type: none; float:left; width:15%;}
+nav li a {color:darkred; text-align: center; text-decoration: none;}
+nav li:hover{background-color:white;}
+nav ul {margin:0px; padding:0px; overflow: hidden;}
+.active {background-color: black}
+
+table {font-family: "Lucida Console"; border-collapse: collapse;}
+table th, table td {border: 2px solid #F0F0F0}
+table tr:hover{background-color: white;}
+table th{background-color: #040D12; color: purple}
+
+#img-gallery {padding-top:10px;}
+#img-gallery .row {margin-bottom:10px;}
