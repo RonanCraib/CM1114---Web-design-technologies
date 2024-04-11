@@ -1,0 +1,130 @@
+body {
+    background-color: #040D12;
+}
+
+header {
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: darkred;
+}
+
+h1 {
+    font-size: 36pt;
+    display: inline;
+}
+
+h2 {
+    font-size: 26pt;
+}
+
+p {
+    font-size: 10pt;
+    color: white;
+}
+
+.card-body p {
+    color: black; /* Change text color for product details */
+}
+
+main {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside {
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center; /* Center the navigation links */
+    height: 60px; /* Set the height of the navigation bar */
+    line-height: 60px; /* Center the text vertically */
+}
+
+nav ul li {
+    display: inline; /* Display navigation links inline */
+    margin-right: 20px; /* Add some spacing between each navigation link */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last navigation link */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkred;
+    font-size: 16px;
+}
+
+nav ul li:hover {
+    background-color: white; /* Change background color to white on hover */
+}
+
+nav ul li:hover a {
+    color: darkred; /* Change text color to darkred on hover */
+}
+
+.active {
+    background-color: black;
+}
+
+table {
+    font-family: "Lucida Console";
+    border-collapse: collapse;
+    margin: auto; /* Horizontally center the table */
+}
+
+table tr:hover {
+    background-color: #f5f5f5; /* Change background color on hover */
+}
+
+table th, table td {
+    color: red; /* Change text color to red */
+    border: 2px solid #F0F0F0;
+    width: 100px; /* Enforce the same width for all cells */
+    text-align: center; /* Horizontally center text */
+    vertical-align: middle; /* Vertically center text */
+    padding: 5px; /* Add padding to cells */
+    font-size: 10pt; /* Reduce text size */
+}
+
+table th {
+    background-color: #040D12;
+    color: purple;
+}
+
+header h1 {
+    color: darkred; /* Ensure header title remains red */
+}
+
+.twitter-embed {
+    margin-top: 20px; /* Add some top margin */
+    margin-left: auto; /* Align to the right */
+}

@@ -1,0 +1,138 @@
+<!--
+    Threat Model
+
+    Threat source: External
+    Threat Agent: Cross-Site Scripting (XSS) Attacker
+    Threat Intention: Injecting malicious scripts into product listings
+    Threat Motivation: Execute unauthorized actions on user devices, steal session cookies
+    Threat Impact: Compromise user devices, theft of authentication credentials
+    Threat Mitigation: Implement input sanitization, encode user-generated content, use Content Security Policy (CSP) headers
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rave Gear Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom stylesheet -->
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Rave Gear Shop</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <!-- Homepage link -->
+            <li class="active"><a href="index.html"> - Homepage</a></li>
+            <!-- Event calendar link -->
+            <li class="active"><a href="event_calendar.html"> - Event calendar</a></li>
+            <!-- Image gallery link -->
+            <li class="active"><a href="img_gallery.html"> - Image gallery</a></li>
+            <!-- Current members link -->
+            <li class="active"><a href="current_members.html"> - Current members</a></li>
+            <!-- Contact us link -->
+            <li class="active"><a href="contact_us.html"> - Contact us</a></li>
+            <!-- Media page link -->
+            <li class="active"><a href="media.html"> - Media page</a></li>
+            <!-- multiMedia page link -->
+            <li class="active"><a href="multimedia.html"> - multimedia page</a></li>
+            <!-- Shop page link -->
+            <li class="active"><a href="shop.html"> - Shop</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/prod1.webp" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike dri fit set - Crimson/Black</h5>
+                        <p class="card-text">Price: £49.99</p>
+                        <p class="card-text">Sizes: S, M, L</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above structure for other products -->
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/prod2.webp" class="card-img-top" alt="Trailberg pink set">
+                    <div class="card-body">
+                        <h5 class="card-title">Trailberg pink set</h5>
+                        <p class="card-text">Price: £74.99</p>
+                        <p class="card-text">Sizes: S, M, L</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/prod3.jpg" class="card-img-top" alt="Trailberg khaki set">
+                    <div class="card-body">
+                        <h5 class="card-title">Trailberg khaki set</h5>
+                        <p class="card-text">Price: £40.99</p>
+                        <p class="card-text">Sizes: S, M, L</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/prod4.jpg" class="card-img-top" alt="Frequency set - teal">
+                    <div class="card-body">
+                        <h5 class="card-title">Frequency set teal</h5>
+                        <p class="card-text">Price: £89.99</p>
+                        <p class="card-text">Sizes: S, M, L</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/prod5.webp" class="card-img-top" alt="Trailberg set - atomic blue">
+                    <div class="card-body">
+                        <h5 class="card-title">Trailberg set - atomic blue</h5>
+                        <p class="card-text">Price: £49.99</p>
+                        <p class="card-text">Sizes: S, M, L</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/prod6.jpg" class="card-img-top" alt="Trailberg set - pink">
+                    <div class="card-body">
+                        <h5 class="card-title">Trailberg set - pink</h5>
+                        <p class="card-text">Price: £49.99</p>
+                        <p class="card-text">Sizes: S, M, L</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer style="text-align: center; margin-top: 20px;">
+        <p>&copy; Ronan Craib 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
